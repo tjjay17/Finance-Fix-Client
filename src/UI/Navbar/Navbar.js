@@ -1,15 +1,16 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link,useHistory} from 'react-router-dom';
 import './Navbar.css';
 import {connect} from 'react-redux';
 import HamburgerIcon from '../HamburgerIcon/HamburgerIcon';
 
 const Navbar = (props) =>{
     let navItems;
+    let history = useHistory();
 
     const signOut = () =>{
         localStorage.removeItem('token');
-        window.location.reload();
+        history.push('/');
     }
 
     if(props.authenticated){

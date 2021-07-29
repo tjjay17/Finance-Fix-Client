@@ -41,7 +41,7 @@ const Plaid = (props) =>{
         Axios.post('/getaccesstoken',{link_token:token, email:props.email,id:props.id})
             .then(res => {
                 console.log('hi',res);
-                window.location.reload();
+                history.push('/plaid');
             })
             .catch(e => console.log(e + ':('));
     }
