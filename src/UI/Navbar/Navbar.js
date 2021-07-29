@@ -41,7 +41,7 @@ const Navbar = (props) =>{
                     <p>Home</p>
                 </Link>
                 <Link to = '/register'>
-                    <p style = {{color:'red'}}>Register</p>
+                    <p style = {{color:'green'}}>Register</p>
                 </Link>
                 <Link to = '/login'>
                     <p>Login</p>
