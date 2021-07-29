@@ -1,0 +1,80 @@
+#plaidContainer{
+    position:absolute;
+    top:15vh;
+}
+
+.intro{
+    width: 100vw;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.intro h1{
+    font-size: 9vw;
+    color:#0099ff;
+}
+
+.intro p{
+    font-size: 3vw;
+    margin-top: 2vh;
+}
+
+#plaidApplication{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#plaidApplication img{
+    width:30vw;
+    height:30vh;
+    /* position: relative;
+    left:50%;
+    transform: translateX(-50%); */
+    margin-top: 0;
+    margin-top: 2vh;
+}
+
+#plaidApplication button{
+    /* position: relative;
+    left:50%;
+    transform: translateX(-50%); */
+    font-size: 3vw;
+    margin-top: 5vh;
+    font-family: 'Ubuntu',sans-serif;
+    cursor:pointer;
+}
+
+#getTransactions,#plaidToExpenseBtn{
+    color:#0077ff;
+    border-radius: 25px;
+    padding:2%;
+    background-color: white;
+    border:3px solid #0099ff;
+    transition: 0.4s background-color, 0.4s color;
+}
+
+#transactionsList{
+    position: relative;
+    left:50%;
+    transform: translateX(-25%);
+    margin-top: 4vh;
+}
+
+#plaidToExpenseBtn{
+    margin-left:2vw;
+}
+
+/* .plaidSpinner{
+    position: absolute;
+    left:20%;
+    z-index: 1;
+} */
+
+@media (hover:hover){
+    #getTransactions:hover,#plaidToExpenseBtn:hover{
+        background-color: #0099ff;
+        color:white;
+        border:3px solid black;
+    }
+}

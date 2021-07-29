@@ -1,0 +1,68 @@
+
+@keyframes imgLoad{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(10px);
+    }
+}
+
+#boardId{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:12vh;
+}
+
+#boardId h1{
+    margin:auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 8vw;
+    text-align: center;
+    color:#0099ff;
+}
+
+#boardId p{
+    font-family: 'Ubuntu',sans-serif;
+    width:95vw;
+    text-align: center;
+}
+
+#welcome{
+    display: block;
+    opacity: 0;
+    margin:auto;
+    width:70vw;
+    animation-name: imgLoad;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#budgetForm{
+    width:100vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#budgetForm input{
+    width:80vw;
+    border:none;
+    border-bottom:1px solid black;
+    outline: none;
+}
+
+#budgetForm input:focus{
+    border-bottom: 2px solid #0099ff;
+}
+
+@media only screen and (min-width:700px){
+    #welcome{
+        width:50vw;
+    }
+}
+
