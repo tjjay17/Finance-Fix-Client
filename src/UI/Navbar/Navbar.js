@@ -38,13 +38,13 @@ const Navbar = (props) =>{
         navItems = (
             <div id = 'navItems'>
                 <Link to = '/'>
-                    <p>Home</p>
+                    <p style = {{color:'black'}}>Home</p>
                 </Link>
                 <Link to = '/register'>
-                    <p style = {{color:'orange'}}>Register</p>
+                    <p style = {{color:'black'}}>Register</p>
                 </Link>
                 <Link to = '/login'>
-                    <p>Login</p>
+                    <p style = {{color:'black'}}>Login</p>
                 </Link>
             </div>
         );
